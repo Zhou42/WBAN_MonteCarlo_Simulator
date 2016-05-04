@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93A0B29E1B34F55400D72966 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93A0B29D1B34F55400D72966 /* main.cpp */; };
+		930BE7161B3657E600C4356B /* get_PDR_RSSI_List.c in Sources */ = {isa = PBXBuildFile; fileRef = 930BE7151B3657E600C4356B /* get_PDR_RSSI_List.c */; };
+		93A0B2A61B35001200D72966 /* loadData.c in Sources */ = {isa = PBXBuildFile; fileRef = 93A0B2A51B35001200D72966 /* loadData.c */; };
+		93F2180A1B3512E4007C10F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 93F218081B3512E4007C10F3 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		930BE7151B3657E600C4356B /* get_PDR_RSSI_List.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = get_PDR_RSSI_List.c; sourceTree = "<group>"; };
 		93A0B29A1B34F55400D72966 /* WBAN_MonteCarlo_Simulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WBAN_MonteCarlo_Simulator; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A0B29D1B34F55400D72966 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		93A0B2A51B35001200D72966 /* loadData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loadData.c; sourceTree = "<group>"; };
+		93F218081B3512E4007C10F3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		93F218091B3512E4007C10F3 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		93F2180B1B362B3E007C10F3 /* loadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		93A0B29C1B34F55400D72966 /* WBAN_MonteCarlo_Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				93A0B29D1B34F55400D72966 /* main.cpp */,
+				930BE7151B3657E600C4356B /* get_PDR_RSSI_List.c */,
+				93F2180B1B362B3E007C10F3 /* loadData.h */,
+				93A0B2A51B35001200D72966 /* loadData.c */,
+				93F218081B3512E4007C10F3 /* main.c */,
+				93F218091B3512E4007C10F3 /* main.h */,
 			);
 			path = WBAN_MonteCarlo_Simulator;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A0B29E1B34F55400D72966 /* main.cpp in Sources */,
+				930BE7161B3657E600C4356B /* get_PDR_RSSI_List.c in Sources */,
+				93A0B2A61B35001200D72966 /* loadData.c in Sources */,
+				93F2180A1B3512E4007C10F3 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +217,10 @@
 		93A0B2A21B34F55400D72966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +228,10 @@
 		93A0B2A31B34F55400D72966 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +255,7 @@
 				93A0B2A31B34F55400D72966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
